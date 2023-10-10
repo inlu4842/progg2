@@ -1,16 +1,21 @@
-#!/usr/bin/env python3
-
 from numba import njit
-
 import matplotlib.pyplot as plt
 import numpy as np
 from person import Person
 
 def main():
-	f = Person(8)
-	print(f.get())
-	k= f.fib(8)
-	print(k)
+     f = Person(5)
+     print(f.get())
+     f.set(8)
+     print(f.get())
+     k = f.fib()
+     print(k)
+
+#def main():
+	#f = Person(8)
+    # print(f.get())
+	#k= f.fib(8)
+	#print(k)
      
 
 if __name__ == '__main__':
