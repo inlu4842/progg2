@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 from numba import njit
 import time
 import matplotlib.pyplot as plt
@@ -22,7 +23,7 @@ def fib_py(n):
         return fib_py(n - 1) + fib_py(n - 2)
     
 # Numba-optimized Fibonacci
-#@jit
+@njit
 def fib_numba(n):
     if n <= 1:
         return n
