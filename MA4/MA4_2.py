@@ -28,6 +28,9 @@ def main():
      k= fib_py(8)
      print(k)
 
+     result = f.fib()
+     print(result)
+
 #def main():
 	#f = Person(8)
     # print(f.get())
