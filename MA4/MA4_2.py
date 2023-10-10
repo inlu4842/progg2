@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from numba import njit
-import time
+
 import matplotlib.pyplot as plt
 import numpy as np
 from person import Person
@@ -11,8 +11,7 @@ def main():
 	print(f.get())
 	f.set(8)
 	print(f.get())
-    #f = Person(5)
-    #print(f.fib)
+     
 
 if __name__ == '__main__':
 	main()
