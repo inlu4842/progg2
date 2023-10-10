@@ -7,10 +7,10 @@ import numpy as np
 from person import Person
 
 def main():
-	f = Person(5)
+	f = Person(8)
 	print(f.get())
-	f.set(8)
-	print(f.get())
+	f= f.fib(8)
+	print(f)
      
 
 if __name__ == '__main__':
