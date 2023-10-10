@@ -9,8 +9,8 @@ from person import Person
 def main():
 	f = Person(8)
 	print(f.get())
-	f= f.fib(8)
-	print(f)
+	k= f.fib(8)
+	print(k)
      
 
 if __name__ == '__main__':
