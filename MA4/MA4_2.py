@@ -8,8 +8,9 @@ def main():
      print(f.get())
      f.set(8)
      print(f.get())
-     print(f.fib_py())
-     print(f)
+
+     k= fib_py(8)
+     print(k)
 
 #def main():
 	#f = Person(8)
