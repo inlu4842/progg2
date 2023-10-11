@@ -24,14 +24,10 @@ void Person::set(int n){
 	}
 
 int Person::fib(int n){
-	if (n <= 1) {
+	if (n <= 1)
     	return n;
-	}
-	    // Recursively calculate Fibonacci numbers
-    int fib_n_minus_1 = fib(n - 1);
-    int fib_n_minus_2 = fib(n - 2);
-
-    return fib_n_minus_1 + fib_n_minus_2;
+    else
+        return fib(n - 1) + fib(n - 2);
 }
 
 extern "C"{

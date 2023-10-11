@@ -25,18 +25,12 @@ def main():
      f.set(8)
      print(f.get())
 
-     k= fib_py(5)
+     k = fib_py(5)
      print(k)
 
      result = f.fib()
      print(result)
 
-#def main():
-	#f = Person(8)
-    # print(f.get())
-	#k= f.fib(8)
-	#print(k)
-     
 
 if __name__ == '__main__':
 	main()
