@@ -52,7 +52,7 @@ def main():
      plt.xlabel('n')
      plt.ylabel('Time (seconds)')
      plt.legend()
-     plt.savefig('fib_timings.png'
+     plt.savefig('fib_timings.png')
 
      #f = Person(5)
      #print(f.get())
