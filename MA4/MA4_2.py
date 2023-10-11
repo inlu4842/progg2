@@ -30,8 +30,8 @@ def main():
 
      print(f.fib(8))
 
-     result = f.fib()
-     print(result)
+     #result = f.fib()
+     #print(result)
 
 
 if __name__ == '__main__':
