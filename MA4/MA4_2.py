@@ -36,7 +36,7 @@ def main():
 
 
      #print(f'Fib(8) using C++: {f.fib()}')
-     f = Person(6)
+     #f = Person(6)
      print(f.fibc())
 
 
