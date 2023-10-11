@@ -23,38 +23,43 @@ def fib_numba(n):
 
 def main():
      
-     n_values = list(range(30, 46))
-     p_values = list(range(30, 40))
+     n_values = list(range(20, 30))
+     #p_values = list(range(30, 40))
      timings_py = []
      timings_numba = []
-     timings_cpp = []
+     #timings_cpp = []
      
      for n in n_values:
           start_time = time.perf_counter()
           fib_numba(n)
           end_time = time.perf_counter()
-          timings_numba.append(end_time - start_time)          
+          timings_numba.append(end_time - start_time)  
           
-          f = Person(n)
           start_time = time.perf_counter()
-          f.fibc()
+          fib_py(n)
           end_time = time.perf_counter()
-          timings_cpp.append(end_time - start_time)
+          timings_py.append(end_time - start_time)        
+          
+          #f = Person(n)
+          #start_time = time.perf_counter()
+          #f.fibc()
+          #end_time = time.perf_counter()
+          #timings_cpp.append(end_time - start_time)
 
-     for p in p_values:
-          start_time = time.perf_counter()
-          fib_py(p)
-          end_time = time.perf_counter()
-          timings_py.append(end_time - start_time)
+     #for p in p_values:
+          #start_time = time.perf_counter()
+          #fib_py(p)
+          #end_time = time.perf_counter()
+          #timings_py.append(end_time - start_time)
 
      plt.figure(figsize=(10, 6))
-     plt.plot(p_values, timings_py, label='Python Fibonacci')
+     plt.plot(n_values, timings_py, label='Python Fibonacci')
      plt.plot(n_values, timings_numba, label='Numba Fibonacci')
-     plt.plot(n_values, timings_cpp, label='C++ Fibonacci')
+     #plt.plot(n_values, timings_cpp, label='C++ Fibonacci')
      plt.xlabel('n')
      plt.ylabel('Time (seconds)')
      plt.legend()
-     plt.savefig('fib_timings_with_py.png')
+     plt.savefig('fib_timings_with_2030.png')
 
      #f = Person(5)
      #print(f.get())
