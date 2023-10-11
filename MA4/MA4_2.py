@@ -36,9 +36,8 @@ def main():
 
 
      #print(f'Fib(8) using C++: {f.fib()}')
-
-     result = f.fibc()
-     print(result)
+     f = Person(6)
+     print(f.fibc())
 
 
 if __name__ == '__main__':
