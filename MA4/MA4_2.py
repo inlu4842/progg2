@@ -48,7 +48,7 @@ def main():
           timings_py.append(end_time - start_time)
 
      plt.figure(figsize=(10, 6))
-     plt.plot(n_values, timings_py, label='Python Fibonacci')
+     plt.plot(p_values, timings_py, label='Python Fibonacci')
      plt.plot(n_values, timings_numba, label='Numba Fibonacci')
      plt.plot(n_values, timings_cpp, label='C++ Fibonacci')
      plt.xlabel('n')
