@@ -26,6 +26,8 @@ def time_fib_cpp(n):
     end_time = time.perf_counter()
     return end_time - start_time
     
+n_values = list(range(30, 46))
+timings_cpp = [time_fib_cpp(n) for n in n_values]
 
 def main():
      f = Person(5)
