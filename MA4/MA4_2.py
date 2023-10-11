@@ -25,7 +25,7 @@ def main():
      f.set(8)
      print(f.get())
 
-     k = fib_py(5)
+     k = fib_py(8)
      print(k)
 
      result = f.fib()
