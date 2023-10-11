@@ -28,8 +28,7 @@ def main():
      k = fib_py(8)
      print(k)
 
-     result = f.fib()
-     print(result)
+     print(f.fib())
 
 
 if __name__ == '__main__':
