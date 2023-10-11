@@ -32,7 +32,7 @@ long Person::calculateFibonacci(int n){
 }
 
 long Person::fib() {
-    return calculateFibonacci();
+    return calculateFibonacci(age);
 }
 
 extern "C"{
