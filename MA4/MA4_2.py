@@ -28,6 +28,8 @@ def main():
      k = fib_py(8)
      print(k)
 
+     print(f.fib(8))
+
      result = f.fib()
      print(result)
 

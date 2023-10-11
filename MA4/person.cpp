@@ -6,7 +6,7 @@ class Person{
 		Person(int);
 		int get();
 		void set(int);
-		int fib();
+		int fib(int);
 	private:
 		int age;
 		int calculateFibonacci(int);  // Private Fibonacci calculation method
