@@ -33,7 +33,7 @@ def main():
      print(f'Fib(8) using Numba: {numba_fib8}')
 
      f = Person(8)
-     result = f.fib()
+     result = f.fibc()
      print(result)
 
      #print(f'Fib(8) using C++: {f.fib()}')
