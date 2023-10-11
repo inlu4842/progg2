@@ -32,7 +32,6 @@ def main():
      numba_fib8 = fib_numba(8)
      print(f'Fib(8) using Numba: {numba_fib8}')
 
-     f = Person(8)
      result = f.fibc()
      print(result)
 
