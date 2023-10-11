@@ -25,10 +25,13 @@ def main():
      f.set(8)
      print(f.get())
 
-     k = fib_py(8)
-     print(k)
+     python_fib8 = fib_py(8)
+     print(f'Fib(8) using Python: {python_fib8}')
 
-     print(f.fib(8))
+     numba_fib8 = fib_numba(8)
+     print(f'Fib(8) using Numba: {numba_fib8}')
+
+     print(f'Fib(8) using C++: {f.fib(8)}')
 
      #result = f.fib()
      #print(result)
