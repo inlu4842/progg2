@@ -27,8 +27,7 @@ void Person::set(int n){
 long Person::calculateFibonacci(int n){
 	if (n <= 1)
 	 	return n;
-    else
-    	return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
+	return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
 }
 
 long Person::fib() {
