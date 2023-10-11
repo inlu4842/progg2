@@ -22,13 +22,13 @@ def fib_numba(n):
 def main():
      f = Person(5)
      print(f.get())
-     f.set(8)
-     print(f.get())
+     #f.set(8)
+     #print(f.get())
 
-     k= fib_py(8)
+     k= fib_py(5)
      print(k)
 
-     result = f.fib(5)
+     result = f.fib()
      print(result)
 
 #def main():
