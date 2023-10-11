@@ -19,6 +19,13 @@ def fib_numba(n):
     else:
         return fib_numba(n - 1) + fib_numba(n - 2)
     
+def time_fib_cpp(n):
+    f = Person(n)
+    start_time = time.perf_counter()
+    f.fibc()
+    end_time = time.perf_counter()
+    return end_time - start_time
+    
 
 def main():
      f = Person(5)
@@ -31,9 +38,6 @@ def main():
 
      numba_fib8 = fib_numba(8)
      print(f'Fib(8) using Numba: {numba_fib8}')
-
-     result = f.fibc()
-     print(result)
 
      #print(f'Fib(8) using C++: {f.fib()}')
 
