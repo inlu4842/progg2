@@ -9,6 +9,7 @@ class Person{
 		int fib(int);
 	private:
 		int age;
+		int calculateFibonacci(int);  // Private Fibonacci calculation method
 	};
  
 Person::Person(int n){
@@ -23,30 +24,16 @@ void Person::set(int n){
 	age = n;
 	}
 
-int Person::fib(int n) {
-    if (n <= 1)
-        return n;
-    
-    int a = 0;
-    int b = 1;
-    int result = 0;
-
-    for (int i = 2; i <= n; i++) {
-        result = a + b;
-        a = b;
-        b = result;
-    }
-
-    return result;
+int Person::calculateFibonacci(int n){
+	if (n <= 1)
+	 	return n;
+    else
+    	return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
 }
 
-
-//int Person::fib(int n){
-//	if (n <= 1)
-  //  	return n;
-    //else
-      //  return fib(n - 1) + fib(n - 2);
-//}
+int Person::fib(int n) {
+    return calculateFibonacci(n);
+}
 
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}

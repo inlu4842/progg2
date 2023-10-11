@@ -18,8 +18,12 @@ class Person(object):
 	def set(self, age):
 		lib.Person_set(self.obj, age)
 
-	def fib(self):
-		return lib.Person_fib(self.obj)
+	def fib(self, n):
+		return lib.Person_fib(self.obj, n)
         
 	def __del__(self):
 		return lib.Person_delete(self.obj)
+	
+	import ctypes
+
+lib = ctypes.cdll.LoadLibrary('./libperson.so')
