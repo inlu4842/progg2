@@ -9,7 +9,7 @@ class Person{
 		long fib(int);
 	private:
 		int age;
-		long calculateFibonacci(int);  // Private Fibonacci calculation method
+		long fibi(int);  // Private Fibonacci calculation method
 	};
  
 Person::Person(int n){
