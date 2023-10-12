@@ -23,7 +23,7 @@ def fib_numba(n):
 
 def main():
      
-     n_values = list(range(20, 30))
+     n_values = list(range(20, 30)) #or 30-46 for numba and c++
      p_values = list(range(30, 40))
      timings_py = []
      timings_numba = []
